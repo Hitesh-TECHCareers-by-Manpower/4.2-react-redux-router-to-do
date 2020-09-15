@@ -16,6 +16,7 @@ import ToDoList from './components/ToDoList';
  */
 const store = createStore(
   toDosReducer,
+  // If we want to use the Redux DevTools, add this argument as well!
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
@@ -40,7 +41,7 @@ store.dispatch( addNewToDo( "Review React" ) );
 // wheverever we need it (whichever component needs it.)
 ReactDOM.render(
   <Provider store={store}>
-    <h1>React-Redux- To-Do List (TECHCareers)</h1>
+    <h1>React-Redux To-Do List (TECHCareers)</h1>
     <ToDos />
     <ToDoList />
   </Provider>,
