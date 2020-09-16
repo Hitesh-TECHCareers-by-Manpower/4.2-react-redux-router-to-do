@@ -20,8 +20,8 @@ function ToDos ( props )
     props.dispatch( addNewToDo( newTask ) );
     // Clear the field.
     setNewTask( '' );
+  }
 
-    
   return (
     <>
       <h2>To-Do Form</h2>
